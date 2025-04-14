@@ -13,7 +13,7 @@ jobs:
         run: |
           echo "Listing all the files in the repository"
           find . -type f \
-            ! -path "./ .github/*" \
-            ! -path "./ .git/*" \
+            ! -path "./.github/*" \
+            ! -path "./.git/*" \
             ! -name ".gitignore" \
             
