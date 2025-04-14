@@ -12,4 +12,8 @@ jobs:
       - name: List all the files
         run: |
           echo "Listing all the files in the repository"
-          find . -type f
+          find . -type f \
+            ! -path "./ .github/*" \
+            ! -path "./ .git/*" \
+            ! -name ".gitignore" \
+            
