@@ -7,5 +7,9 @@ jobs:
   list-files:
     runs-on: ubuntu-latest
     steps:
-      - name: List Files
-        run: ls -la
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: List all the files
+        run: |
+          echo "Listing all the files in the repository"
+          find . -type f
